@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise e Avaliação da Entrevista: Candidata Elayne Silva - Vaga de Vendedora</title>
+    <!-- Fontes (Padrão V3) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Script de detecção de JS para animação segura -->
+    <script>document.documentElement.className = 'js';</script>
+    <style>
+        /* --- 1. Núcleo da Identidade Visual (Tokens) --- */
+        :root {
+            --primary-bg: #06192a;
+            --card-bg: #0A243D;
+            --accent-color: #00e800;
+            --text-primary: #ffffff;
+            --text-muted: #cccccc;
+            --text-subtle: #a0a0a0;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --accent-glow: 0 0 8px rgba(0, 232, 0, 0.7);
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Merriweather', serif;
+            --font-size-base: 1.1rem;
+            --font-size-h3: 1.5rem;
+            --font-size-h2: clamp(2rem, 4vw, 2.5rem);
+            --font-size-h1: clamp(2.5rem, 5vw, 3rem);
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+        }
+
+        /* --- 2. Estrutura e Layout --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-primary);
+            color: var(--text-primary);
+            background-color: var(--primary-bg);
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--space-sm) var(--space-md);
+            background-color: rgba(6, 25, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo { height: 48px; }
+        .header-title { font-size: 1rem; font-weight: 600; color: var(--text-muted); }
+
+        main { padding-top: calc(48px + (var(--space-sm) * 2)); padding-bottom: var(--space-lg); }
+
+        footer {
+            padding: var(--space-lg) var(--space-md);
+            text-align: center;
+            background-color: #000;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo { height: 96px; margin-bottom: var(--space-sm); }
+        footer p { color: var(--text-subtle); font-size: 0.9rem; }
+
+        /* --- 4. Componentes --- */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 var(--space-md); }
+        section { padding-top: var(--space-lg); }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: var(--space-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+        .card:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px; }
+
+        /* --- 5. Animações --- */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { opacity: 0; }
+        .fade-in.is-visible { animation: fadeIn 0.8s ease-out forwards; }
+        .fade-in { opacity: 1; }
+
+        /* --- 6. Estilos de Conteúdo --- */
+        .hero-section { text-align: center; padding-bottom: 0; }
+        h1 { font-size: var(--font-size-h1); color: var(--text-primary); font-weight: 700; margin-bottom: var(--space-sm); }
+        h2 { font-size: var(--font-size-h2); color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem; }
+        h3 { font-size: var(--font-size-h3); color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-sm); padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        h4 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: var(--space-md); }
+        p { color: var(--text-subtle); margin-bottom: 1rem; max-width: 75ch; }
+
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; table-layout: fixed; }
+        th, td { border: 1px solid var(--border-color); padding: 0.75rem 1rem; text-align: left; color: var(--text-subtle); word-wrap: break-word; vertical-align: top; }
+        th { background-color: rgba(0, 232, 0, 0.1); color: var(--accent-color); font-weight: 600; }
+        tbody tr:nth-child(odd) { background-color: rgba(0, 0, 0, 0.1); }
+
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Media Queries */
+        @media (min-width: 768px) { .container { max-width: 1200px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/Clebito2/ConsultoriaLive/main/Logo%20live%20oficial-21.png" alt="Logo Principal da Live Consultoria" class="header-logo" loading="lazy">
+        <span class="header-title">Live Consultoria</span>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero-section fade-in">
+                <h1>Análise e Avaliação da Entrevista: Candidata Elayne Silva - Vaga de Vendedora</h1>
+                <p>Esta análise é baseada na transcrição fornecida da entrevista com a candidata Elayne Silva para a vaga de Vendedora, conduzida pelo entrevistador Cléber Donato. A estrutura segue perguntas típicas para o cargo, mapeando respostas diretas ou inferidas. A avaliação considera adequação ao perfil de vendedora em varejo de utilidades domésticas/decoração, com ênfase em comunicação, proatividade, resiliência a metas, habilidade com clientes difíceis e expectativa salarial (candidata pretende R$ 2.500, alinhado a ofertas baseadas em comissões com mínimo garantido de R$ 2.200). Ausências de respostas são notadas, e inferências são justificadas por contextos semelhantes na transcrição. Link para o currículo da candidata: <a href="https://drive.google.com/file/d/191gaiYTXZxTvn2C6j0l9flHfFaI0OZQO/view?usp=sharing" target="_blank">Acessar Currículo</a>.</p>
+            </section>
+
+            <section class="fade-in">
+                <h2>Fase 2: Condução (Diálogo Estruturado)</h2>
+                <div class="card">
+                    <h3>Bloco 1: Abertura e Motivação</h3>
+                    <h4>1. Fale-me um pouco sobre sua trajetória profissional, focando em experiências com vendas e atendimento ao cliente.</h4>
+                    <p>A candidata descreve experiência recente na Palmas Mix (4-6 meses em vendas, possivelmente em utilidades ou similar, com indicação de produtos para concorrentes como Goianita). Antes, trabalhou 8 meses em papelaria no setor de vendas, e em ramo alimentício com atendimento de mesa e caixa. Está à procura de oportunidades em vendas para construir salário.</p>
+
+                    <h4>2. O que te atraiu especificamente a esta vaga de Vendedora?</h4>
+                    <p>A candidata menciona familiaridade com o ramo por indicações anteriores (clientes eram direcionados à Goianita quando produtos faltavam). Veio presencialmente entregar currículo, atraída pela proximidade e similaridade com emprego anterior (utilidades/monte de coisas). Está em outros processos seletivos em vendas, mas vê oportunidade para "fazer um salário bacana".</p>
+
+                    <h3>Bloco 2: Experiências Anteriores e Rotina</h3>
+                    <h4>3. Descreva seu dia a dia em seu último emprego de vendas. Quais eram suas principais responsabilidades?</h4>
+                    <p>Na Palmas Mix, lidava com vendas, metas e comissões; enfrentou transição com falta de produtos e prateleiras vazias, o que impactava vendas. Responsabilidades incluíam indicar concorrentes quando necessário. Saiu em 8 do mês passado devido a pagamentos inconsistentes.</p>
+
+                    <h4>4. Você trabalhava com metas? Como lidava com não atingi-las?</h4>
+                    <p>Sim, na Palmas Mix (primeira experiência com metas); não gostou, pois pagamentos não condiziam mesmo batendo metas nos meses 3 e 4. Nos primeiros meses, não atingiu devido a transição e falta de produtos, mas compreendeu e persistiu. Pretende salário de R$ 2.500 via comissões. Em empregos anteriores, não havia metas (salário fixo).</p>
+
+                    <h3>Bloco 3: Competências Comportamentais (Técnica STAR)</h3>
+                    <h4>5. (Atendimento a Clientes Difíceis) Conte sobre uma situação com um cliente difícil e como resolveu.</h4>
+                    <p>Não tem exemplos específicos; afirma ser paciente, tranquila, ouvinte e não explosiva, resolvendo sem discussões. Indicava concorrentes para satisfazer clientes quando produtos faltavam.</p>
+
+                    <h4>6. (Baixo Movimento) Como você lida com dias de baixo movimento na loja?</h4>
+                    <p>Considera ruim (tempo passa devagar); usa para repor produtos, limpar e organizar, tornando a loja mais apresentável para quando clientes chegarem. Não menciona atração ativa (ex.: rua), dependendo da loja.</p>
+
+                    <h4>7. (Gestão de Metas) Descreva uma ocasião em que não atingiu metas. Qual foi sua ação?</h4>
+                    <p>Nos primeiros meses na Palmas Mix, não atingiu devido a transição e falta de produtos; compreendeu o contexto e persistiu até melhorar. Bateu nos meses seguintes, mas saiu por pagamentos inconsistentes.</p>
+
+                    <h4>8. (Aprendizado e Adaptação) Fale sobre uma mudança em processos de vendas ou loja desorganizada. Como lidou?</h4>
+                    <p>Na Palmas Mix, lidou com transição (prateleiras vazias, reclamações); persistiu, compreendendo o dono, e adaptou até reposições melhorarem. Saiu por questões financeiras.</p>
+
+                    <h3>Bloco 4: Encerramento</h3>
+                    <h4>9. Você tem alguma pergunta sobre a vaga, equipe ou empresa?</h4>
+                    <p>Perguntas inferidas sobre outros processos seletivos, horários (prefere flexíveis, menciona 13h-21h em outra vaga), proposta (interessada, mas compara com outra "bacana"). Menciona conquista de clientes em vez de carteira existente.</p>
+                </div>
+            </section>
+
+            <section class="fade-in">
+                <h2>Insights sobre o Candidato</h2>
+                <div class="card">
+                    <h3>Forças</h3>
+                    <p>Familiaridade com ramo similar (utilidades), proatividade em baixo movimento (reposição/limpeza), paciência autodeclarada e compreensão em transições. Experiência recente em vendas, com capacidade de indicar alternativas para satisfação do cliente.</p>
+
+                    <h3>Fraquezas</h3>
+                    <p>Experiência limitada (menos de 1 ano em vendas com metas), frustração com comissões inconsistentes (pode indicar baixa tolerância financeira), falta de exemplos concretos de clientes difíceis (sugere inexperiência em cenários desafiadores).</p>
+
+                    <h3>Oportunidades</h3>
+                    <p>Potencial para treinamento em técnicas de vendas e gerenciamento de metas; expectativa salarial (R$ 2.500) alinhada a ofertas comissões (mínimo R$ 2.200 garantido), mas requer negociação para retenção.</p>
+
+                    <h3>Ameaças</h3>
+                    <p>Participação em outros processos (pode aceitar oferta concorrente com horários alternativos); saída recente por insatisfação financeira pode repetir se metas não forem claras.</p>
+                </div>
+            </section>
+
+            <section class="fade-in">
+                <h2>Fase 3: Avaliação (Ficha de Avaliação)</h2>
+                <div class="card">
+                    <h3>Competências Comportamentais (50%)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>Competência</th><th>Nota</th><th>Justificativa</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Comunicação/Atendimento</td><td>4</td><td>Boa em ouvir e indicar alternativas, mas falta exemplos reais de desafios.</td></tr>
+                            <tr><td>Resiliência a Frustrações</td><td>3</td><td>Persistiu em transição, mas saiu por inconsistências financeiras, indicando tolerância média.</td></tr>
+                            <tr><td>Proatividade</td><td>4</td><td>Usa baixo movimento para organização; demonstra iniciativa em manutenção da loja.</td></tr>
+                            <tr><td>Paciência/Escuta Ativa</td><td>4</td><td>Autodeclarada paciente e ouvinte, alinhado a valorização de escuta na empresa.</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Competências Técnicas (30%)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>Competência</th><th>Nota</th><th>Justificativa</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Experiência em Vendas/Varejo</td><td>3</td><td>Relevante no ramo, mas curta (4-6 meses recentes) e sem profundidade em sistemas.</td></tr>
+                            <tr><td>Gerenciamento de Metas/Comissões</td><td>3</td><td>Primeira experiência com metas; bateu, mas frustrada com pagamentos, sugerindo adaptação limitada.</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Alinhamento (20%)</h3>
+                    <table>
+                        <thead>
+                            <tr><th>Competência</th><th>Nota</th><th>Justificativa</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Motivação e Interesse no Ramo</td><td>4</td><td>Atraiu-se por familiaridade e potencial salarial; interessada em construir salário no varejo.</td></tr>
+                            <tr><td>Coachability (Aprendizado/Adaptabilidade)</td><td>4</td><td>Adaptou a transição; disposta a conquistar clientes, indicando abertura a treinamentos.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="fade-in">
+                <h2>Parecer do Entrevistador</h2>
+                <div class="card">
+                    <h3>Pontos Fortes Observados</h3>
+                    <p>- Familiaridade com produtos similares e indicação de concorrentes para satisfação do cliente.<br>- Proatividade em organização durante baixo movimento.<br>- Paciência e escuta ativa autodeclaradas, alinhadas a valores de atendimento.<br>- Interesse no ramo e disposição para horários flexíveis.</p>
+
+                    <h3>Pontos de Atenção (Red Flags)</h3>
+                    <p>- Experiência limitada em vendas com metas, com frustração por inconsistências financeiras.<br>- Ausência de exemplos concretos de clientes difíceis, sugerindo inexperiência em cenários complexos.<br>- Expectativa salarial de R$ 2.500 via comissões, com risco de saída se não atendida (similar à experiência anterior).<br>- Participação em outros processos seletivos, podendo priorizar ofertas com horários alternativos.</p>
+
+                    <h3>Parecer Final</h3>
+                    <p>Aprovado com Ressalvas. Considerar para próxima etapa com teste prático de atendimento (role play com cliente difícil) e treinamento em gerenciamento de metas. Negociar comissões claras para alinhar expectativas e reter a candidata, dado fit com o ramo.</p>
+                </div>
+            </section>
+
+            <section class="fade-in">
+                <h2>Orientação para o Recrutador</h2>
+                <div class="card">
+                    <h3>Próximos Passos</h3>
+                    <p>Realize role play prático para validar habilidades de atendimento a clientes difíceis e resiliência em cenários de baixa venda. Avalie conhecimento de produtos via simulação de recomendação de alternativas.</p>
+
+                    <h3>Recomendações</h3>
+                    <p>Ofereça treinamento inicial em técnicas de vendas e sistemas de gestão para reforçar coachability. Negocie salário garantido (mínimo R$ 2.200 via ajuda de custo) e comissões atrativas (até 3%) para mitigar risco de frustração. Monitore fit cultural em período de experiência, focando em proatividade e comunicação.</p>
+
+                    <h3>Riscos e Mitigações</h3>
+                    <p>Se expectativa salarial não for atendida, risco de perda para concorrentes; mitigue com transparência sobre metas variáveis (ex.: campanhas sazonais). Priorize candidatos com rede de contatos como diferencial, mas não exija.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img src="https://raw.githubusercontent.com/Clebito2/ConsultoriaLive/main/Logo%20live%20oficial-21.png" alt="Logo da Live Consultoria" class="footer-logo" loading="lazy">
+        <p>Live Consultoria Empresarial</p>
+        <p>Transformando Potencial em Performance.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.documentElement.classList.contains('js')) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                const targets = document.querySelectorAll('.fade-in');
+                targets.forEach(target => {
+                    target.style.opacity = 0;
+                    observer.observe(target);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
