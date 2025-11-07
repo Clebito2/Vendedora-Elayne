@@ -73,10 +73,10 @@
         }
 
         .footer-logo { height: 96px; margin-bottom: var(--space-sm); }
-        footer p { color: var(--text-subtle); font-size: 0.9rem; }
+        footer p { color: var(--text-subtle); font-size: 0.9rem; text-align: center; }
 
         /* --- 4. Componentes --- */
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 var(--space-md); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 var(--space-md); text-align: center; }
         section { padding-top: var(--space-lg); }
         .card {
             background-color: var(--card-bg);
@@ -84,6 +84,7 @@
             border-radius: 12px;
             padding: var(--space-md);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
         .card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
         .card:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px; }
@@ -96,15 +97,16 @@
 
         /* --- 6. Estilos de Conteúdo --- */
         .hero-section { text-align: center; padding-bottom: 0; }
-        h1 { font-size: var(--font-size-h1); color: var(--text-primary); font-weight: 700; margin-bottom: var(--space-sm); }
-        h2 { font-size: var(--font-size-h2); color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem; }
-        h3 { font-size: var(--font-size-h3); color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-sm); padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
-        h4 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: var(--space-md); }
-        p { color: var(--text-subtle); margin-bottom: 1rem; max-width: 75ch; }
+        h1 { font-size: var(--font-size-h1); color: var(--text-primary); font-weight: 700; margin-bottom: var(--space-sm); text-align: center; }
+        h2 { font-size: var(--font-size-h2); color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem; text-align: center; }
+        h3 { font-size: var(--font-size-h3); color: var(--text-primary); font-weight: 600; margin-bottom: var(--space-sm); padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); text-align: center; }
+        h4 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; margin-top: var(--space-md); text-align: center; }
+        p { color: var(--text-subtle); margin-bottom: 1rem; max-width: 75ch; margin-left: auto; margin-right: auto; text-align: center; }
 
         table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; table-layout: fixed; }
-        th, td { border: 1px solid var(--border-color); padding: 0.75rem 1rem; text-align: left; color: var(--text-subtle); word-wrap: break-word; vertical-align: top; }
+        th, td { border: 1px solid var(--border-color); padding: 0.75rem 1rem; text-align: center; color: var(--text-subtle); word-wrap: break-word; vertical-align: top; }
         th { background-color: rgba(0, 232, 0, 0.1); color: var(--accent-color); font-weight: 600; }
+
         tbody tr:nth-child(odd) { background-color: rgba(0, 0, 0, 0.1); }
 
         a { color: var(--accent-color); text-decoration: none; }
